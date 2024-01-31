@@ -29,7 +29,7 @@ pipeline{
 				sh 'mvn clean compile'
 			}
 		}
-		stege('Package'){
+		stage('Package'){
 			steps{
 				sh 'mnv package -DskipTests'
 			}
